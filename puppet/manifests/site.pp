@@ -1,3 +1,3 @@
-import apache
+include firewall
 
-import ssh
+include apache
