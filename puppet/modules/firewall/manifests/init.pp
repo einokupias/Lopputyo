@@ -12,6 +12,10 @@ class firewall {
 		content => template ("firewall/user6.rules"),
 	}
 
+	file {'/etc/ufw/ufw.conf':
+		content => template ("firewall/ufw.conf"),
+	}
+
 	service {'ufw':
 		ensure => running,
 		enable => true,
