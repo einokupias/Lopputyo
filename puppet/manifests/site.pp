@@ -1,3 +1,5 @@
-include firewall
+class {ssh:}
+class {firewall:}
+class {apache2:}
 
-include apache2
+class {skel:}
