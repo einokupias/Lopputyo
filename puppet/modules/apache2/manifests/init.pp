@@ -1,7 +1,8 @@
 class apache2 {
         package {'apache2':
                 ensure => present,
-        }
+        	allowcdrom => true,
+	}
 
         service {'apache2':
                 ensure => "running",

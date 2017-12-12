@@ -1,6 +1,7 @@
 class ssh {
 	package {'ssh':
 		ensure => present,
+		allowcdrom => true,
 	}
 
 	service {'ssh':

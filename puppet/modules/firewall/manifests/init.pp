@@ -2,6 +2,7 @@ class firewall {
 	
 	package {"ufw":
 		ensure => "installed",
+		allowcdrom => true,		
 	}
 
 	file {'/etc/ufw/user.rules':

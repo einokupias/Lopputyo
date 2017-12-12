@@ -2,6 +2,7 @@ class php {
 
 	package {'libapache2-mod-php':
 		ensure => 'present',
+		allowcdrom => true,
 	}
 
 	file { '/etc/apache2/mods-available/php7.0.conf':
